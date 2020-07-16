@@ -13,7 +13,7 @@ abstract class ProductDao {
     @Query("SELECT * FROM product")
     abstract fun getAll(): List<ProductEntityModel>
 
-    @Query("SELECT * FROM product WHERE product.name GLOB '*' || :name || '*'")
+    @Query("SELECT * FROM product WHERE LOWER(product.name) LIKE '%' || LOWER(:name) || '%'")
     abstract fun getAllLive(name: String?): LiveData<List<ProductEntityModel>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.EditTextTransparentTheme">
+        <item name="android:colorControlNormal">@color/whiteTransparent</item>
+        <item name="android:colorControlActivated">@color/whiteTransparent</item>
+        <item name="android:colorControlHighlight">@color/whiteTransparent</item>
+    </style>
+
+    <style name="AppTheme.Toolbar">
+        <item name="background">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="actionMenuTextColor">@color/action_menu_text_color_white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="micro">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="medium">16dp</dimen>
+    <dimen name="large">32dp</dimen>
+    <dimen name="macro">64dp</dimen>
+    <dimen name="macroNegative">-64dp</dimen>
+
+    <dimen name="iconSizeSmall">24dp</dimen>
+    <dimen name="iconSizeMedium">48dp</dimen>
+    <dimen name="iconSizeLarge">96dp</dimen>
+
+    <dimen name="panoramaMargin">240dp</dimen>
+    <dimen name="panoramaSize">240dp</dimen>
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Обычный склад</string>
+
+    <string name="delete">Удалить</string>
+    <string name="save">Сохранить</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="close">Закрыть</string>
+
+    <string name="edit_product_title">Редактирование</string>
+    <string name="create_product_title">Создание</string>
+
+    <string name="product_search">Поиск по товорам</string>
+    <string name="ruble">%1$s ₽</string>
+    <string name="product_empty">Товары не найдены</string>
+    <string name="product_name">Имя</string>
+    <string name="product_address">Адрес</string>
+    <string name="product_address_with_coordinates">%1$s\nКоординаты (%2$f, %3$f)</string>
+    <string name="product_price">Цена, ₽</string>
+    <string name="show_on_map">Показать на карте</string>
+    <string name="delete_product_dialog_text">Вы дейстительно хотите удалить товар?</string>
+    <string name="product_file_error">Произошла ошибка во время работы с файлом</string>
+
+    <string name="export_products">Экпортировать товары</string>
+    <string name="import_products">Импортировать товары</string>
+    <string name="import_chooser">Выберите файл для с товарами</string>
+
+</resources>

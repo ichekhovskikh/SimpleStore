@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    android:padding="@dimen/medium">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civIcon"
+        android:layout_width="@dimen/iconSizeLarge"
+        android:layout_height="@dimen/iconSizeLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/micro"
+        android:layout_marginBottom="@dimen/micro"
+        android:elevation="@dimen/micro"
+        android:src="@drawable/ic_camera"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="@dimen/micro"
+        app:civ_circle_background_color="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/civIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="123  ₽" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium"
+        android:layout_marginTop="@dimen/micro"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/civIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+        tools:text="Наименование" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium"
+        android:layout_marginTop="@dimen/micro"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="@dimen/micro"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/civIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:text="Адрес" />
+
+    <TextView
+        android:id="@+id/tvShowOnMap"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small"
+        android:layout_marginTop="@dimen/micro"
+        android:paddingStart="@dimen/small"
+        android:paddingEnd="@dimen/small"
+        android:text="@string/show_on_map"
+        android:textColor="?attr/colorControlNormal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/civIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
